@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>श्री रामधुन शोभायात्रा | जल्द आ रहा है</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Noto+Sans+Devanagari:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 50%, #ffcc02 100%);
+            font-family: 'Noto Sans Devanagari', 'Tiro Devanagari Hindi', serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='50' font-size='50' opacity='0.03'%3E%E0%A5%90%3C/text%3E%3C/svg%3E") repeat;
+            background-size: 80px 80px;
+            pointer-events: none;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 800px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .om-symbol {
+            font-size: 4rem;
+            color: #fff;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            margin-bottom: 10px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            }
+            to {
+                text-shadow: 0 4px 40px rgba(255,255,255,0.5);
+            }
+        }
+
+        .main-title {
+            font-family: 'Tiro Devanagari Hindi', serif;
+            font-size: 3.2rem;
+            color: #fff;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            margin-bottom: 30px;
+            line-height: 1.4;
+        }
+
+        .organizer {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px 40px;
+            margin-bottom: 40px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .organizer p {
+            color: #fff;
+            font-size: 1.2rem;
+            margin: 8px 0;
+        }
+
+        .organizer .samiti {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .organizer .location {
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        .construction-box {
+            background: #fff;
+            border-radius: 20px;
+            padding: 50px 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            margin-bottom: 40px;
+        }
+
+        .construction-icon {
+            font-size: 5rem;
+            margin-bottom: 20px;
+            animation: bounce 1s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .construction-title {
+            font-size: 2.2rem;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .construction-text {
+            color: #666;
+            font-size: 1.2rem;
+            line-height: 1.9;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .coming-soon {
+            font-family: 'Tiro Devanagari Hindi', serif;
+            font-size: 1.5rem;
+            color: #ff6b35;
+            margin-top: 25px;
+            font-weight: 600;
+        }
+
+        .decorative-line {
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, #ff6b35, #ffcc02);
+            margin: 25px auto;
+            border-radius: 3px;
+        }
+
+        footer {
+            margin-top: auto;
+            padding-top: 30px;
+            text-align: center;
+        }
+
+        .developer {
+            background: rgba(0,0,0,0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 15px 30px;
+            display: inline-block;
+        }
+
+        .developer p {
+            color: #fff;
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        .developer .company {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #fff;
+            margin-top: 5px;
+        }
+
+        .developer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px solid rgba(255,255,255,0.5);
+            transition: border-color 0.3s ease;
+        }
+
+        .developer a:hover {
+            border-bottom-color: #fff;
+        }
+
+        .jai-shri-ram {
+            font-family: 'Tiro Devanagari Hindi', serif;
+            font-size: 1.8rem;
+            color: #fff;
+            margin-top: 30px;
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.7;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .main-title {
+                font-size: 2.2rem;
+            }
+            .construction-box {
+                padding: 30px 20px;
+            }
+            .construction-title {
+                font-size: 1.6rem;
+            }
+            .organizer {
+                padding: 15px 20px;
+            }
+            .organizer .samiti {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="om-symbol">ॐ</div>
+
+        <h1 class="main-title">श्री रामधुन शोभायात्रा</h1>
+
+        <div class="organizer">
+            <p>आयोजक</p>
+            <p class="samiti">रामजन्म उत्सव समिति</p>
+            <p class="location">लकडगंज पूर्व, नागपुर</p>
+        </div>
+
+        <div class="construction-box">
+            <div class="construction-icon">🏗️</div>
+            <h2 class="construction-title">वेबसाइट निर्माणाधीन है</h2>
+            <div class="decorative-line"></div>
+            <p class="construction-text">
+                हम आपके लिए एक बेहतरीन अनुभव लाने के लिए कड़ी मेहनत कर रहे हैं।
+                श्री रामधुन शोभायात्रा की सभी जानकारी के साथ हमारी वेबसाइट जल्द ही लाइव होगी।
+            </p>
+            <p class="coming-soon">जल्द आ रहा है... 🙏</p>
+        </div>
+
+        <p class="jai-shri-ram">॥ जय श्री राम ॥</p>
+    </div>
+
+    <footer>
+        <div class="developer">
+            <p>Developed by <a href="https://pinecoder.in" target="_blank">PineCoder.in</a></p>
+            <p class="company">Aarohan Enterprises</p>
+        </div>
+    </footer>
+</body>
+</html>
